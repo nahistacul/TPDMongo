@@ -7,7 +7,7 @@ var express         = require("express"),
 
 // Connection to DB
 
-mongoose.connect('mongodb://localhost/tvshows');
+mongoose.connect('mongodb://127.0.0.1:27017/tvshows');
 const database = mongoose.connection;
 
 database.once('connected', () => {
